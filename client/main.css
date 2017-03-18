@@ -4,7 +4,10 @@ body {
 }
 .is-dark {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/Azeures/common-ground/master/lib/Landing%20Main.png');
+  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/Azeures/common-ground/master/lib/Landing%20Main%20Large.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .nav {
   padding: 20px 0;
