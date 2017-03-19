@@ -30,7 +30,56 @@ $(document).on({
         $('.price-starter > article').css('box-shadow', 'none');
     },
     click: function() {
-        console.log('click');
+      let modal = bootbox.dialog({
+      message: $('.form-content').html(),
+      title: "You have selected the <strong>Starter</strong> plan",
+      buttons: [
+        {
+          label: "Cancel",
+          className: "btn btn-default pull-right",
+          callback: function() {
+            console.log("just do something on close");
+          }
+        },
+        {
+          label: "Submit",
+          className: "btn btn-primary pull-right",
+          callback: function() {
+            var form = modal.find(".form");
+            var items = form.serialize();
+
+            console.log(items);
+
+            /* This part you have to complete yourself :D
+            if (your_form_validation(items)) {
+              // Make your data save as async and then just call modal.modal("hide");
+            } else {
+              // Show some errors, etc on form
+            }
+            */
+            modal.modal("hide");
+
+            let confirmModal = bootbox.dialog({
+              message: '<p class="text-center">You have successfully signed up!</p>',
+              buttons: [
+                {
+                  label: "Awesome!",
+                  className: "btn btn-success pull-right",
+                  }
+              ]
+            });
+
+            return false;
+          }
+        }
+      ],
+      show: false,
+      onEscape: function() {
+        modal.modal("hide");
+      }
+  });
+
+  modal.modal("show");
     }
 }, ".price-starter");
 
@@ -44,8 +93,57 @@ $(document).on({
         $('.price-basic > article').css('box-shadow', 'none');
     },
     click: function() {
-        console.log('click');
-        // bootbox.alert("Hello world!");
+        let modal = bootbox.dialog({
+        message: $('.form-content').html(),
+        title: "You have selected the <strong>Basic</strong> plan",
+        buttons: [
+          {
+            label: "Cancel",
+            className: "btn btn-default pull-right",
+            callback: function() {
+              console.log("just do something on close");
+            }
+          },
+          {
+            label: "Submit",
+            className: "btn btn-primary pull-right",
+            callback: function() {
+              var form = modal.find(".form");
+              var items = form.serialize();
+
+              console.log(items);
+
+              /* This part you have to complete yourself :D
+              if (your_form_validation(items)) {
+                // Make your data save as async and then just call modal.modal("hide");
+              } else {
+                // Show some errors, etc on form
+              }
+              */
+              modal.modal("hide");
+
+              let confirmModal = bootbox.dialog({
+                message: '<p class="text-center">You have successfully signed up!</p>',
+                buttons: [
+                  {
+                    label: "Awesome!",
+                    className: "btn btn-success pull-right",
+                    }
+                ]
+              });
+
+              return false;
+            }
+          }
+        ],
+        show: false,
+        onEscape: function() {
+          modal.modal("hide");
+        }
+    });
+
+    modal.modal("show");
+
     }
 }, ".price-basic");
 
@@ -59,7 +157,56 @@ $(document).on({
         $('.price-pro > article').css('box-shadow', 'none');
     },
     click: function() {
-        console.log('click');
+      let modal = bootbox.dialog({
+      message: $('.form-content').html(),
+      title: "You have selected the <strong>Pro</strong> plan",
+      buttons: [
+        {
+          label: "Cancel",
+          className: "btn btn-default pull-right",
+          callback: function() {
+            console.log("just do something on close");
+          }
+        },
+        {
+          label: "Submit",
+          className: "btn btn-primary pull-right",
+          callback: function() {
+            var form = modal.find(".form");
+            var items = form.serialize();
+
+            console.log(items);
+
+            /* This part you have to complete yourself :D
+            if (your_form_validation(items)) {
+              // Make your data save as async and then just call modal.modal("hide");
+            } else {
+              // Show some errors, etc on form
+            }
+            */
+            modal.modal("hide");
+
+            let confirmModal = bootbox.dialog({
+              message: '<p class="text-center">You have successfully signed up!</p>',
+              buttons: [
+                {
+                  label: "Awesome!",
+                  className: "btn btn-success pull-right",
+                  }
+              ]
+            });
+
+            return false;
+          }
+        }
+      ],
+      show: false,
+      onEscape: function() {
+        modal.modal("hide");
+      }
+  });
+
+  modal.modal("show");
     }
 }, ".price-pro");
 
