@@ -1198,7 +1198,7 @@ a.box:active {
   background-color: transparent;
   border-color: transparent;
   color: #69707a;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .button.is-link:hover, .button.is-link:focus {
@@ -4188,7 +4188,7 @@ a.box:active {
 .tile.is-ancestor {
   margin-left: -10px;
   margin-right: -10px;
-  margin-top: -10px;
+  /*margin-top: -10px;*/
 }
 
 .tile.is-ancestor:last-child {

@@ -4,7 +4,7 @@ body {
 }
 .is-dark {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/Azeures/common-ground/master/lib/Landing%20Main%20Large.png');
+  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/Landing Main.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,6 +12,13 @@ body {
 .nav {
   padding: 20px 0;
 }
+
+.nav-fixed {
+  display: none;
+  background-color: white;
+  opacity: 0.9;
+}
+
 .hero.is-dark .nav-item a:not(.button), .hero.is-dark a.nav-item {
     color: #fff;
     padding: 0 30px;

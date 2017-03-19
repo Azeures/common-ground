@@ -6,92 +6,178 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="/../img/logo icon teal.png">
   <link rel="stylesheet" type="text/css" href="bulma.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="css/scrolling-nav.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <section class="hero is-fullheight is-dark">
-    <div class="hero-head">
-      <div class="container">
-        <nav class="nav">
-          <div class="container">
-            <div class="nav-left">
-              <a class="nav-item" href="../index.html">
-                <img src="/../img/logo linear.png" alt="Description">
+
+  <nav class="navbar navbar-fixed-top nav-fixed" role="navigation">
+  <div class="container">
+    <div class="nav nav-left">
+      <a class="nav-item page-scroll is-tab is-hidden-mobile is-active" href="#welcome">Home</a>
+      <a class="nav-item page-scroll is-tab is-hidden-mobile" href="#overview">Features</a>
+      <a class="nav-item page-scroll is-tab is-hidden-mobile">Pricing</a>
+      <a class="nav-item page-scroll is-tab is-hidden-mobile">About</a>
+    </div>
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu">
+      <a class="nav-item page-scroll is-tab is-hidden-tablet is-active">Home</a>
+      <a class="nav-item page-scroll is-tab is-hidden-tablet">Features</a>
+      <a class="nav-item page-scroll is-tab is-hidden-tablet">Pricing</a>
+      <a class="nav-item page-scroll is-tab is-hidden-tablet">About</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Welcome Page  -->
+
+<section id="welcome" class="hero is-fullheight is-dark">
+  <div class="hero-head">
+    <div class="container">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-left">
+            <a class="nav-item" href="../index.html">
+              <img src="/../img/logo linear.png" alt="Description">
+            </a>
+          </div>
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <div class="nav-right nav-menu">
+            <a class="nav-item">
+              About
+            </a>
+            <a class="nav-item">
+              Pricing
+            </a>
+            <a class="nav-item">
+              FAQ
+            </a>
+            <a class="nav-item">
+              Contact
+            </a>
+            <span class="nav-item">
+              <a class="button is-default">
+                Get Early Access
               </a>
-            </div>
-            <span class="nav-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
             </span>
-            <div class="nav-right nav-menu">
-              <a class="nav-item">
-                About
-              </a>
-              <a class="nav-item">
-                Pricing
-              </a>
-              <a class="nav-item">
-                FAQ
-              </a>
-              <a class="nav-item">
-                Contact
-              </a>
-              <span class="nav-item">
-                <a class="button is-default">
-                  Get Early Access
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+
+        <div class="columns is-vcentered">
+            <div class="container">
+            <div class="column is-12">
+              <h2 class="subtitle is-4">
+                IT’S NEVER BEEN A BETTER TIME TO BE A FOOD ENTREPRENEUR
+              </h2>
+              <h1 class="title is-2">
+                KICKSTART YOUR FOOD VENTURE
+              </h1>
+              <h2 class="subtitle is-4">
+                <br><br>
+                Go from concept to store selves with a shared kitchen, co-working space,and community designed for fresh ideas, organic networking, product testing.
+              </h2>
+              <br>
+              <p class="control has-addons has-text-centered">
+                <a class="button is-large is-danger is-outlined">
+                  SUBSCRIBE FOR UPDATES
                 </a>
-              </span>
+              </p>
             </div>
           </div>
-        </nav>
+        </div>
+
+
+
+        <!-- <div class="tile is-ancestor">
+        <h2 class="subtitle is-4">
+          IT’S NEVER BEEN A BETTER TIME TO BE A FOOD ENTREPRENEUR
+        </h2>
+        <h2 class="title is-2">
+          KICKSTART YOUR FOOD VENTURE
+        </h2>
+        </div> -->
+
+
+        <!-- <div class="column is-5">
+          <figure class="image is-4by3">
+            <img src="/../img/kitchen 1.jpg" class="promo-img" alt="Description">
+          </figure>
+        </div>
+        <div class="column is-6 is-offset-1">
+          <h1 class="title is-2">
+            Welcome to your Cafè Dreams
+          </h1>
+          <h2 class="subtitle is-4">
+            It's time for some common ground
+          </h2>
+          <br>
+          <p class="control has-addons has-text-centered">
+            <a class="button is-large is-danger is-outlined">
+              Sign Up
+            </a>
+          </p>
+        </div> -->
       </div>
     </div>
+  </div>
 
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="columns is-vcentered">
-          <div class="column is-5">
-            <figure class="image is-4by3">
-              <img src="/../img/kitchen 1.jpg" class="promo-img" alt="Description">
-            </figure>
-          </div>
+  <div class="hero-foot">
+    <div class="container">
+      <div class="tabs is-centered">
+        <ul>
+          <li>Made with &hearts; &nbsp; Copyright 2017 Common Ground Kitchenary Singapore</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<script async type="text/javascript" src="../js/bulma.js"></script>
+
+<!-- Value Prop Page  -->
+
+<section id="overview" class="hero is-fullheight is-light">
+  <div class="tile is-ancestor">
+    <div class="tile is-parent is-4" style="background-color: black;">
+
+    </div>
+    <div class="tile is-parent" style="background-color: #FFEAD0">
+      <div class="columns is-vcentered">
+          <div class="container">
           <div class="column is-6 is-offset-1">
+            <h2 class="subtitle is-4">
+              WITH THE LOWEST START-UP COST
+            </h2>
             <h1 class="title is-2">
-              Welcome to your Cafè Dreams
+              GROW IN A SHARED<br>COMMERCIAL KITCHEN
             </h1>
             <h2 class="subtitle is-4">
-              It's time for some common ground
+              <br>Take the sting out of the high cost of starting a food business by working out of a shared commercial kitchen. With a capital of as low as $300/month, you can design and build your food produc-tion in an up-to-code kitchen space.
             </h2>
             <br>
-            <p class="control has-addons has-text-centered">
-              <input class="input is-expanded is-large" type="text" placeholder="Join the waitlist, you@example.org">
-              <a class="button is-large is-danger is-outlined">
-                Sign Up
-              </a>
-            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="hero-foot">
-      <div class="container">
-        <div class="tabs is-centered">
-          <ul>
-            <li>Made with &hearts; &nbsp; Copyright 2017 Common Ground Kitchenary Singapore</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script async type="text/javascript" src="../js/bulma.js"></script>
-
-    <section class="hero is-fullheight is-light">
-      <div class="hero-body">
-        Hello World!
-      </div>
-    </section>
+  </div>
+</section>
 
 </body>

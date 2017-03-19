@@ -3,15 +3,22 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 200) {
+    $('.nav-fixed').fadeIn('slow');
+    $('.nav-fixed').css('display', 'block');
+  } else {
+    $('.nav-fixed').fadeOut('slow');
+    // $('.nav-fixed').css('display', 'none');
+  }
 });
 
-Template.hello.helpers({
-});
+// Template.main.onCreated(function siteOnCreated() {
+// });
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
+// Template.main.helpers({
+// });
+
+// Template.main.events({
+// });
