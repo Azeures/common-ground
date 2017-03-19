@@ -41,3 +41,25 @@ body {
   border-radius: 10px;
   border: 10px solid #fff;
 }
+
+.price-starter {
+  z-index: 2;
+  transition:all 0.4s;
+}
+
+.price-basic {
+  z-index: 2;
+  transition:all 0.4s;
+}
+
+.price-pro {
+  z-index: 2;
+  transition:all 0.4s;
+}
+
+.pricing-modal {
+  z-index: 1;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
