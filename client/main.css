@@ -2,6 +2,16 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   color: #fff;
 }
+
+body.modal-open {
+    position: relative;
+    overflow: visible;
+}
+
+.bootbox-body {
+  color: #69707a;
+}
+
 .is-dark {
   background-color: #F62459;
   background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/Landing Main.png');
