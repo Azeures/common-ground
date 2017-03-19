@@ -1,5 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import bootbox from 'bootbox';
+import $ from 'jquery';
 
 import './main.html';
 
@@ -43,6 +45,7 @@ $(document).on({
     },
     click: function() {
         console.log('click');
+        // bootbox.alert("Hello world!");
     }
 }, ".price-basic");
 
