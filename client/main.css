@@ -19,11 +19,31 @@ body.modal-open {
 
 .is-dark {
   background-color: #F62459;
+}
+
+.main-splash {
   background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/Landing Main.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+.overview-splash {
+  background-color: #F62459;
+  background-image: linear-gradient(rgba(255, 181, 254, 0.6),rgba(246, 255, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/kitchen 1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.community-splash {
+  background-color: #F62459;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(46, 50, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/chefs 2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .nav {
   padding: 20px 0;
 }

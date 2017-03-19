@@ -2,6 +2,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import bootbox from 'bootbox';
 import $ from 'jquery';
+import { HTTP } from 'meteor/http';
 
 import './main.html';
 
@@ -38,36 +39,39 @@ $(document).on({
           label: "Cancel",
           className: "btn btn-default pull-right",
           callback: function() {
-            console.log("just do something on close");
           }
         },
         {
           label: "Submit",
           className: "btn btn-primary pull-right",
           callback: function() {
-            var form = modal.find(".form");
-            var items = form.serialize();
+            let form = modal.find(".form");
+            let items = form.serialize();
+            let checkLastInput = items.substring(items.length - 2);
 
-            console.log(items);
-
-            /* This part you have to complete yourself :D
-            if (your_form_validation(items)) {
-              // Make your data save as async and then just call modal.modal("hide");
-            } else {
-              // Show some errors, etc on form
+            if (checkLastInput !== 'on') {
+              items += '&entry.835642081=no';
             }
-            */
-            modal.modal("hide");
 
-            let confirmModal = bootbox.dialog({
-              message: '<p class="text-center">You have successfully signed up!</p>',
-              buttons: [
-                {
-                  label: "Awesome!",
-                  className: "btn btn-success pull-right",
-                  }
-              ]
+            items += '&entry.442779275=STARTER'
+
+            let postURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?'
+            + items + '&submit=-3661640820707724262';
+
+            HTTP.call('GET', postURL, {}, function(){
+              console.log('http success');
+              let confirmModal = bootbox.dialog({
+                message: '<p class="text-center">You have successfully signed up!</p>',
+                buttons: [
+                  {
+                    label: "Awesome!",
+                    className: "btn btn-success pull-right",
+                    }
+                ]
+              });
             });
+
+            modal.modal("hide");
 
             return false;
           }
@@ -101,36 +105,45 @@ $(document).on({
             label: "Cancel",
             className: "btn btn-default pull-right",
             callback: function() {
-              console.log("just do something on close");
             }
           },
           {
             label: "Submit",
             className: "btn btn-primary pull-right",
             callback: function() {
-              var form = modal.find(".form");
-              var items = form.serialize();
+              let form = modal.find(".form");
+              let items = form.serialize();
+              let checkLastInput = items.substring(items.length - 2);
 
-              console.log(items);
-
-              /* This part you have to complete yourself :D
-              if (your_form_validation(items)) {
-                // Make your data save as async and then just call modal.modal("hide");
-              } else {
-                // Show some errors, etc on form
+              if (checkLastInput !== 'on') {
+                items += '&entry.835642081=no';
               }
-              */
-              modal.modal("hide");
 
-              let confirmModal = bootbox.dialog({
-                message: '<p class="text-center">You have successfully signed up!</p>',
-                buttons: [
-                  {
-                    label: "Awesome!",
-                    className: "btn btn-success pull-right",
-                    }
-                ]
+              items += '&entry.442779275=BASIC'
+
+              let postURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?'
+              + items + '&submit=-3661640820707724262';
+
+              console.log(postURL);
+
+              // $.get(postURL,function() {
+              //   console.log('success!');
+              // });
+
+              HTTP.call('GET', postURL, {}, function(){
+                console.log('http success');
+                let confirmModal = bootbox.dialog({
+                  message: '<p class="text-center">You have successfully signed up!</p>',
+                  buttons: [
+                    {
+                      label: "Awesome!",
+                      className: "btn btn-success pull-right",
+                      }
+                  ]
+                });
               });
+
+              modal.modal("hide");
 
               return false;
             }
@@ -165,36 +178,38 @@ $(document).on({
           label: "Cancel",
           className: "btn btn-default pull-right",
           callback: function() {
-            console.log("just do something on close");
           }
         },
         {
           label: "Submit",
           className: "btn btn-primary pull-right",
           callback: function() {
-            var form = modal.find(".form");
-            var items = form.serialize();
+            let form = modal.find(".form");
+            let items = form.serialize();
+            let checkLastInput = items.substring(items.length - 2);
 
-            console.log(items);
-
-            /* This part you have to complete yourself :D
-            if (your_form_validation(items)) {
-              // Make your data save as async and then just call modal.modal("hide");
-            } else {
-              // Show some errors, etc on form
+            if (checkLastInput !== 'on') {
+              items += '&entry.835642081=no';
             }
-            */
-            modal.modal("hide");
 
-            let confirmModal = bootbox.dialog({
-              message: '<p class="text-center">You have successfully signed up!</p>',
-              buttons: [
-                {
-                  label: "Awesome!",
-                  className: "btn btn-success pull-right",
-                  }
-              ]
+            items += '&entry.442779275=PRO'
+
+            let postURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?'
+            + items + '&submit=-3661640820707724262';
+
+            HTTP.call('GET', postURL, {}, function(){
+              let confirmModal = bootbox.dialog({
+                message: '<p class="text-center">You have successfully signed up!</p>',
+                buttons: [
+                  {
+                    label: "Awesome!",
+                    className: "btn btn-success pull-right",
+                    }
+                ]
+              });
             });
+
+            modal.modal("hide");
 
             return false;
           }
@@ -218,3 +233,27 @@ $(document).on({
 //
 // Template.main.events({
 // });
+
+// Form Response
+// https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse
+
+// First Name
+// entry.542517984
+
+// Last Name
+// entry.1124660972
+
+// Email
+// entry.860225029
+
+// Existing Business
+// entry.1355391318
+
+// Contact Me
+// entry.835642081
+
+// &submit
+// submit=-3661640820707724262
+
+// Final URL
+// https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?entry.542517984=testFirst&entry.1124660972=testLast&entry.860225029=somethingEmail&entry.1355391318=Cafe&entry.835642081=Yes&submit=-3661640820707724262
