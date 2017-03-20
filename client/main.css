@@ -27,7 +27,7 @@ body.modal-open {
 }
 
 .main-splash {
-  background-image: linear-gradient(rgba(25, 181, 254, 0.6),rgba(246, 36, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/Landing Main.png');
+  background-image: url('/../img/PHOTO1_dark.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@ body.modal-open {
 
 .overview-splash {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(255, 181, 254, 0.6),rgba(246, 255, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/kitchen 1.jpg');
+  background-image: url('/../img/PHOTO2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,7 +43,7 @@ body.modal-open {
 
 .community-splash {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(46, 50, 89, 0.4)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/chefs 2.jpg');
+  background-image: url('/../img/PHOTO3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -51,7 +51,7 @@ body.modal-open {
 
 .pricing-splash {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(28, 28, 28, 0.6),rgba(19, 19, 19, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/cafe.jpg');
+  background-image: url('/../img/PHOTO4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -110,4 +110,12 @@ body.modal-open {
   background-color: white;
   border-radius: 20px;
   border: 1px solid grey;
+}
+
+.is-halfheight {
+  min-height: 50vh;
+}
+
+.is-quarterheight {
+  min-height: 25vh;
 }

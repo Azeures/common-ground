@@ -25,9 +25,11 @@ $(document).on({
     mouseenter: function() {
         $('.price-starter').css('transform', 'scale(1.08, 1.08)');
         $('.price-starter > article').css('box-shadow', '0 0 1em gold');
+        $('.starter-btn').css('opacity', '100');
     },
     mouseleave: function() {
         $('.price-starter').css('transform', 'scale(1, 1)');
+        $('.starter-btn').css('opacity', '0');
         $('.price-starter > article').css('box-shadow', 'none');
     },
     click: function() {
@@ -90,10 +92,12 @@ $(document).on({
 $(document).on({
     mouseenter: function() {
         $('.price-basic').css('transform', 'scale(1.08, 1.08)');
+        $('.basic-btn').css('opacity', '100');
         $('.price-basic > article').css('box-shadow', '0 0 1em gold');
     },
     mouseleave: function() {
         $('.price-basic').css('transform', 'scale(1, 1)');
+        $('.basic-btn').css('opacity', '0');
         $('.price-basic > article').css('box-shadow', 'none');
     },
     click: function() {
@@ -163,10 +167,12 @@ $(document).on({
 $(document).on({
     mouseenter: function() {
         $('.price-pro').css('transform', 'scale(1.08, 1.08)');
+        $('.pro-btn').css('opacity', '100');
         $('.price-pro > article').css('box-shadow', '0 0 1em gold');
     },
     mouseleave: function() {
         $('.price-pro').css('transform', 'scale(1, 1)');
+        $('.pro-btn').css('opacity', '0');
         $('.price-pro > article').css('box-shadow', 'none');
     },
     click: function() {
