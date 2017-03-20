@@ -8,6 +8,11 @@ body.modal-open {
     overflow: visible;
 }
 
+.nav-icon {
+  max-height: 50px;
+  padding-right: 50px;
+}
+
 .bootbox-body {
   color: #69707a;
 }
