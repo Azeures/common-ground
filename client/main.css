@@ -38,7 +38,15 @@ body.modal-open {
 
 .community-splash {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(46, 50, 89, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/chefs 2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(46, 50, 89, 0.4)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/chefs 2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pricing-splash {
+  background-color: #F62459;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.6),rgba(19, 19, 19, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/../img/cafe.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
