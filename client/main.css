@@ -119,3 +119,22 @@ body.modal-open {
 .is-quarterheight {
   min-height: 25vh;
 }
+
+.starter-btn {
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+.basic-btn {
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+.pro-btn {
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+.font-white {
+  color: white !important;
+}
