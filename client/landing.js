@@ -5,6 +5,21 @@ import $ from 'jquery';
 import { HTTP } from 'meteor/http';
 
 import './main.html';
+import './landing.html'
+
+
+
+// Template.main.onCreated(function siteOnCreated() {
+//
+// });
+//
+// Template.main.helpers({
+//
+// });
+//
+// Template.main.events({
+//
+// });
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
@@ -288,14 +303,63 @@ $(document).on({
     }
 }, "#subscribe");
 
-// Template.main.onCreated(function siteOnCreated() {
-// });
-//
-// Template.main.helpers({
-// });
-//
-// Template.main.events({
-// });
+
+$(document).on({
+    click: function() {
+      let modal = bootbox.dialog({
+      message: $('.form-content').html(),
+      title: "Tell us more about yourself!",
+      buttons: [
+        {
+          label: "Cancel",
+          className: "btn btn-default pull-right",
+          callback: function() {
+          }
+        },
+        {
+          label: "Submit",
+          className: "btn btn-primary pull-right",
+          callback: function() {
+            let form = modal.find(".form");
+            let items = form.serialize();
+            let checkLastInput = items.substring(items.length - 2);
+
+            if (checkLastInput !== 'on') {
+              items += '&entry.835642081=no';
+            }
+
+            items += '&entry.442779275=DEMO-PLS'
+
+            let postURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?'
+            + items + '&submit=-3661640820707724262';
+
+            HTTP.call('GET', postURL, {}, function(){
+              let confirmModal = bootbox.dialog({
+                message: '<p class="text-center">Thank you! We will contact you shortly.</p>',
+                buttons: [
+                  {
+                    label: "Awesome!",
+                    className: "btn btn-success pull-right",
+                    }
+                ]
+              });
+            });
+
+            modal.modal("hide");
+
+            return false;
+          }
+        }
+      ],
+      show: false,
+      onEscape: function() {
+        modal.modal("hide");
+      }
+  });
+
+  modal.modal("show");
+    }
+}, "#demo-req");
 
 // Form Response
 // https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse
