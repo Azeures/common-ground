@@ -171,9 +171,33 @@ body.modal-open {
   }
 }*/
 
+/*Only displays when fulfilled by media query below*/
+@media (min-width:769px){
+  .mobile-show {
+    display: none !important;
+  }
+}
+
 @media (max-width:768px){
   .mobile-hidden {
     display: none;
+  }
+  .mobile-show {
+    display: block;
+  }
+  .starter-btn {
+    opacity: 1!important;
+    margin-bottom: 10px;
+  }
+
+  .basic-btn {
+    opacity: 1!important;
+    margin-bottom: 10px;
+  }
+
+  .pro-btn {
+    opacity: 1!important;
+    margin-bottom: 10px;
   }
 }
 
