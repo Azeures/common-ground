@@ -26,6 +26,10 @@ body.modal-open {
   background-color: #F62459;
 }
 
+.info-content {
+  padding: 35px;
+}
+
 .main-splash {
   background-image: url('/../img/PHOTO1_dark.jpg');
   background-repeat: no-repeat;
@@ -49,9 +53,16 @@ body.modal-open {
   background-position: center;
 }
 
-.pricing-splash {
+.revolution-splash {
   background-color: black;
   background-image: url('/../img/PHOTO4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pricing-splash {
+  background-color: black !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
