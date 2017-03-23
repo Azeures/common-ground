@@ -1999,10 +1999,10 @@ if (typeof jQuery === 'undefined') {
     var active = $(selector)
       .addClass('is-active')
 
-    if (active.parent('.dropdown-menu').length) {
-      active = active
-        .addClass('is-active')
-    }
+    // if (active.parent('.dropdown-menu').length) {
+    //   active = active
+    //     .addClass('is-active')
+    // }
 
     active.trigger('activate.bs.scrollspy')
   }

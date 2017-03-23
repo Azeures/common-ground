@@ -2760,7 +2760,10 @@ a.box:active {
   cursor: pointer;
   display: block;
   height: 50px;
-  position: relative;
+  /*Modded*/
+  position: absolute;
+  right: 0px;
+  /**/
   width: 50px;
 }
 
@@ -5167,7 +5170,8 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    background-color: #fff;
+    background-color: white;
+    opacity: 0.99;
     box-shadow: 0 4px 7px rgba(17, 17, 17, 0.1);
     left: 0;
     display: none;
@@ -6028,7 +6032,7 @@ a.panel-block:hover {
 
 @media screen and (max-width: 768px) {
   .hero.is-light .nav-menu {
-    background-color: #f5f7fa;
+    /*background-color: #f5f7fa;*/
   }
 }
 

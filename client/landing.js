@@ -28,6 +28,8 @@ $(document).scroll(function() {
     $('.nav-fixed').css('display', 'block');
   } else {
     $('.nav-fixed').fadeOut('slow');
+    $('.nav-menu').css('display', 'none');
+    $('.nav-menu').fadeOut('slow');
     // $('.nav-fixed').css('display', 'none');
   }
 });
@@ -360,6 +362,30 @@ $(document).on({
   modal.modal("show");
     }
 }, "#demo-req");
+
+
+$(document).on({
+    click: function() {
+      const state = $('.nav-menu').css('display');
+
+      if (state === 'block') {
+        $('.nav-menu').css('display', 'none');
+      } else {
+        $('.nav-menu').css('display', 'block');
+      }
+    }
+}, ".nav-toggle");
+
+$(document).on({
+    click: function() {
+      const state = $('.nav-menu').css('display');
+
+      if (state === 'block') {
+        $('.nav-menu').fadeOut('slow');
+        $('.nav-menu').css('display', 'none');
+      }
+    }
+}, ".mobile-tab");
 
 // Form Response
 // https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse
