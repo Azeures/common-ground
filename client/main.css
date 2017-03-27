@@ -30,6 +30,13 @@ body.modal-open {
   padding: 35px;
 }
 
+.kitchen-splash {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/../img/PHOTOK1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .main-splash {
   background-image: url('/../img/PHOTO1_dark.jpg');
   background-repeat: no-repeat;
@@ -225,4 +232,18 @@ body.modal-open {
 
 .font-white {
   color: white !important;
+}
+
+.font-black {
+  color: black !important;
+}
+
+.nav-btn-kitchen {
+  color: #69707a !important;
+  border: 1px solid #d3d6db !important;
+  border-radius: 3px;
+}
+
+.nav-btn-kitchen:hover {
+  color: #ed6c63 !important;
 }

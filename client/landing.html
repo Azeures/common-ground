@@ -6,6 +6,7 @@
       <a class="nav-item page-scroll is-tab is-hidden-mobile is-active" href="#welcome">Home</a>
       <a class="nav-item page-scroll is-tab is-hidden-mobile" href="#overview">Features</a>
       <a class="nav-item page-scroll is-tab is-hidden-mobile" href="#pricing">Pricing</a>
+      <a id="kitchen-info" class="nav-item page-scroll is-tab is-hidden-mobile">Kitchen</a>
       <div class="pull-right">
         <span class="nav-toggle">
           <span></span>
@@ -14,10 +15,11 @@
         </span>
       </div>
     </div>
-    <div class="nav nav-right nav-menu is-hidden-tablet">
+    <div class="nav nav-right nav-menu mobile-nav-menu is-hidden-tablet">
       <a class="nav-item page-scroll is-tab is-hidden-tablet mobile-tab is-active" href="#welcome">Home</a>
       <a class="nav-item page-scroll is-tab is-hidden-tablet mobile-tab" href="#overview">Features</a>
       <a class="nav-item page-scroll is-tab is-hidden-tablet mobile-tab" href="#mobile-pricing">Pricing</a>
+            <a id="kitchen-info" class="nav-item page-scroll is-tab is-hidden-tablet mobile-tab">Kitchen</a>
       <a class="nav-item is-tab is-hidden-tablet mobile-tab" id="demo-req" style="color: #ed6c63;">
         REQUEST A DEMO
       </a>
@@ -33,11 +35,11 @@
       <nav class="nav" style="padding: 0;">
         <div class="container">
           <div class="nav-left">
-            <a class="nav-item" href="../index.html">
+            <a id="landing" class="nav-item">
               <img src="/../img/logo linear teal.png" alt="Description">
             </a>
           </div>
-          <div class="nav-right nav-menu">
+          <div class="nav-right nav-menu" style="display: flex;">
             <a class="nav-item page-scroll font-white" href="#overview">
               Features
             </a>
@@ -46,6 +48,9 @@
             </a> -->
             <a class="nav-item page-scroll font-white" href="#pricing">
               Pricing
+            </a>
+            <a id="kitchen-info" class="nav-item page-scroll font-white">
+              Kitchen
             </a>
             <span class="nav-item">
               <a class="button is-default page-scroll" href="#overview">
@@ -70,7 +75,7 @@
                 IT’S NEVER BEEN A BETTER TIME TO BE A FOOD ENTREPRENEUR
               </h2>
               <h1 class="title is-2" style="color: white !important;">
-                KICKSTART YOUR FOOD VENTURE
+                BEGIN YOUR FOOD VENTURE
               </h1>
               <h2 class="subtitle is-4" style="color: white !important;">
                 <br><br>
@@ -352,7 +357,7 @@
               <br>
               <br><br>
               <h1 class="title is-2"><strong>Community</strong></h1><br>
-              <p class="subtitle feature-content">The Common Ground space is designed to encourage collaboration across food entrepreneurs. Our community and our community is an evolving roster of visionaries and creators from around the world.</p>
+              <p class="subtitle feature-content">The The Linea space is designed to encourage collaboration across food entrepreneurs. Our community and our community is an evolving roster of visionaries and creators from around the world.</p>
             </article>
           </div>
 
@@ -361,7 +366,7 @@
               <br>
               <br><br>
               <h1 class="title is-2"><strong>Network</strong></h1><br>
-              <p class="subtitle feature-content">Common Ground provides access to a vetted network of influencers, advisors, mentors and investors. We work closely with Members to help identify professionals in our netowr providing specialized branding, financial and consultation services to help grow their business.</p>
+              <p class="subtitle feature-content">The Linea provides access to a vetted network of influencers, advisors, mentors and investors. We work closely with Members to help identify professionals in our netowr providing specialized branding, financial and consultation services to help grow their business.</p>
             </article>
           </div>
 
@@ -370,7 +375,7 @@
               <br>
               <br><br>
               <h1 class="title is-2"><strong>Access</strong></h1><br>
-              <p class="subtitle feature-content">Common Ground is on a mission to keep you up-to-date of industry happenings and trends that could impact your business. Stay relevant with our curated newsletter!</p>
+              <p class="subtitle feature-content">The Linea is on a mission to keep you up-to-date of industry happenings and trends that could impact your business. Stay relevant with our curated newsletter!</p>
             </article>
           </div>
         </div>
@@ -396,7 +401,7 @@
   <div class="container">
     <div class="tabs is-centered">
       <ul>
-        <li>Copyright 2017 Common Ground Singapore</li>
+        <li>Copyright 2017 The Linea Singapore</li>
       </ul>
     </div>
   </div>
@@ -418,8 +423,12 @@
       <input type="email" class="form-control" id="email" name="entry.860225029" placeholder="Enter email">
     </div>
     <div class="form-group">
-      <label for="food-type">Are you currently running an existing business?</label>
-      <input type="text" class="form-control" id="food-type" name="entry.1355391318" placeholder="Confectionary, Catering, Coffee, etc.">
+      <label for="food-type">Are you currently running an existing business? What do you do?</label>
+      <input type="text" class="form-control" id="biz-type" name="entry.1355391318" placeholder="Enter business">
+    </div>
+    <div class="form-group">
+      <label for="food-type">What food business would like to start/develop?</label>
+      <input type="text" class="form-control" id="food-type" name="entry.1537984995" placeholder="Restaurant, Catering, etc.">
     </div>
     <div class="checkbox">
       <label>

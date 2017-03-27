@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 import bootbox from 'bootbox';
 import $ from 'jquery';
 import { HTTP } from 'meteor/http';
@@ -14,8 +15,8 @@ $(document).scroll(function() {
     $('.nav-fixed').css('display', 'block');
   } else {
     $('.nav-fixed').fadeOut('slow');
-    $('.nav-menu').css('display', 'none');
-    $('.nav-menu').fadeOut('slow');
+    $('.mobile-nav-menu').css('display', 'none');
+    $('.mobile-nav-menu').fadeOut('slow');
     // $('.nav-fixed').css('display', 'none');
   }
 });
@@ -388,6 +389,9 @@ $(document).on({
 // Existing Business
 // entry.1355391318
 
+// What you wanna start?
+// entry.1537984995
+
 // Contact Me
 // entry.835642081
 
@@ -396,3 +400,7 @@ $(document).on({
 
 // Final URL
 // https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?entry.542517984=testFirst&entry.1124660972=testLast&entry.860225029=somethingEmail&entry.1355391318=Cafe&entry.835642081=Yes&submit=-3661640820707724262
+
+
+
+// entry.542517984=first&entry.1124660972=last&entry.860225029=email%40asdas.asdasd&entry.1355391318=food&entry.835642081=on

@@ -5237,6 +5237,12 @@ a.nav-item.is-tab.is-active {
   margin-right: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-right {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .nav-right {
     -webkit-box-align: stretch;
