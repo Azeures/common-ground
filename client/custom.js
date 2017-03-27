@@ -132,7 +132,7 @@ $(document).on({
               let postURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfzQWBuhPYtpDrKZd-FutfqPi3qB5V8Ohd013GewK-AYMO3JA/formResponse?'
               + items + '&submit=-3661640820707724262';
 
-              console.log(postURL);
+              // console.log(postURL);
 
               // $.get(postURL,function() {
               //   console.log('success!');

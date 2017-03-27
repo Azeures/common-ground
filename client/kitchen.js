@@ -82,7 +82,7 @@ Template.kitchen.events({
         ]
       });
     });
-    console.log(postURL);
+    // console.log(postURL);
     console.log('submitted!');
   }
 });
