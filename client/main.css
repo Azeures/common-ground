@@ -215,6 +215,10 @@ body.modal-open {
   min-height: 25vh;
 }
 
+.is-fiveheight {
+  min-height: 5vh;
+}
+
 .starter-btn {
   opacity: 0;
   margin-bottom: 10px;
