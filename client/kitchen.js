@@ -25,13 +25,36 @@ Template.kitchen.events({
     FlowRouter.go('Pages.landing');
   },
 
+  'click #kitchen-landing'(event) {
+    FlowRouter.go('Pages.landing');
+    setTimeout(function() {
+      document.location = '#welcome';
+    }, 0);
+  },
+
   'click #kitchen-info'(event) {
     FlowRouter.go('Pages.kitchen');
   },
 
   'click #kitchen-features'(event) {
-    console.log('clicking!');
     FlowRouter.go('Pages.landing.overview');
+    setTimeout(function() {
+      document.location = '#overview';
+    }, 0);
+  },
+
+  'click #kitchen-overview'(event) {
+    FlowRouter.go('Pages.landing.overview');
+    setTimeout(function() {
+      document.location = '#overview';
+    }, 0);
+  },
+
+  'click #kitchen-pricing'(event) {
+    FlowRouter.go('Pages.landing.pricing');
+    setTimeout(function() {
+      document.location = '#pricing';
+    }, 0);
   },
 
   'submit .kitchen-form'(event, template) {

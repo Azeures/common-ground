@@ -12,14 +12,14 @@ FlowRouter.route('/', {
   }
 });
 
-FlowRouter.route('/', {
+FlowRouter.route('/#pricing', {
   name: 'Pages.landing.overview',
   action: function() {
     BlazeLayout.render("landing", {content: "home"});
   }
 });
 
-FlowRouter.route('/#pricing', {
+FlowRouter.route('/', {
   name: 'Pages.landing.pricing',
   action: function() {
     BlazeLayout.render("landing", {content: "home"});
