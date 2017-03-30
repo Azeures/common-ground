@@ -34,4 +34,8 @@ Template.landing.events({
   'click #kitchen-info'(event) {
     FlowRouter.go('Pages.kitchen');
   },
+
+  'click #mentors-info'(event) {
+    FlowRouter.go('Pages.mentors');
+  },
 });
