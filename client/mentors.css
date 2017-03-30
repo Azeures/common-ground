@@ -1,0 +1,16 @@
+.profile-pic {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.profile-pic img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  filter: grayscale(100%);
+}

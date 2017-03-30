@@ -57,6 +57,10 @@ Template.kitchen.events({
     }, 0);
   },
 
+  'click #mentors-info'(event) {
+    FlowRouter.go('Pages.mentors');
+  },
+
   'submit .kitchen-form'(event, template) {
     event.preventDefault();
     const first = $('#first-name').val();

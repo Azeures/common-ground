@@ -101,6 +101,11 @@ body.modal-open {
   padding: 20px 0;
 }
 
+.nav-fixed-const {
+  background-color: white;
+  opacity: 0.9;
+}
+
 .nav-fixed {
   display: none;
   background-color: white;
