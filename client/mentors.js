@@ -26,8 +26,14 @@ Template.mentors.events({
     FlowRouter.go('Pages.landing');
   },
 
+  'click #mentors-landing'(event) {
+    FlowRouter.go('Pages.landing');
+    setTimeout(function() {
+      document.location = '#welcome';
+    }, 0);
+  },
+
   'click #mentors-kitchen'(event) {
-    console.log('test');
     FlowRouter.go('Pages.kitchen');
   },
 
