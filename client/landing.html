@@ -107,7 +107,7 @@
 
 <!-- "low start-up cost" Page  -->
 
-<section id="overview" class="hero is-light is-halfheight">
+<section id="overview" class="hero is-light {{#if isMobile}} is-halfheight {{else}} is-fullheight {{/if}}">
   <div class="tile is-ancestor">
     <div class="tile is-parent is-6 is-halfheight overview-splash"></div>
     <div class="tile is-parent is-6 is-halfheight" style="background-color: white;)">
@@ -141,7 +141,7 @@
 
 <!-- "community" Page  -->
 
-<section id="network" class="hero is-light is-halfheight">
+<section id="network" class="hero is-light {{#if isMobile}} is-halfheight {{else}} is-fullheight {{/if}}">
   <div class="tile is-ancestor">
     <div class="tile is-parent is- 6 is-halfheight community-splash mobile-show"></div>
     <div class="tile is-parent is-6 is-halfheight" style="background-color: white;">
@@ -164,7 +164,7 @@
   </div>
 </section>
 
-<section id="revolution" class="hero is-light is-halfheight">
+<section id="revolution" class="hero is-light {{#if isMobile}} is-halfheight {{else}} is-fullheight {{/if}}">
   <div class="tile is-ancestor">
     <div class="tile is-parent is-6 is-halfheight revolution-splash"></div>
     <div class="tile is-parent is-6 is-halfheight" style="background-color: white;)">
@@ -201,7 +201,7 @@
         </article>
       </div>
 
-      <div class="tile">
+      <div class="tile pricing-tile">
 
         <div class="tile is-parent price-starter">
           <article class="tile is-child pricing-modal is-info has-text-centered">

@@ -17,6 +17,12 @@ Template.landing.onCreated( function() {
 });
 
 Template.landing.helpers({
+  isMobile() {
+    if (screen.width < 769) {
+      return true;
+    }
+    else return false;
+  }
 
 });
 
