@@ -33,3 +33,11 @@ FlowRouter.route('/kitchen', {
     $(window).scrollTop(0);
   }
 });
+
+FlowRouter.route('/mentors', {
+  name: 'Pages.mentors',
+  action: function() {
+    BlazeLayout.render("mentors", {content: "mentorsInfo"});
+    $(window).scrollTop(0);
+  }
+});
