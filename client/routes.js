@@ -41,3 +41,11 @@ FlowRouter.route('/mentors', {
     $(window).scrollTop(0);
   }
 });
+
+FlowRouter.route('/users', {
+  name: 'Pages.users',
+  action: function() {
+    BlazeLayout.render("users", {content: "users"});
+    $(window).scrollTop(0);
+  }
+});

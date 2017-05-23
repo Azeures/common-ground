@@ -1,0 +1,66 @@
+<template name="users">
+<nav class="navbar navbar-fixed-top nav-fixed-const" role="navigation">
+  <div class="container">
+    <div class="nav nav-left">
+      <img src="/../img/lineaWhite.png" class="nav-icon">
+      <a id="landing" class="nav-item is-tab is-hidden-mobile">Home</a>
+      <a id="mentors-overview" class="nav-item s-tab is-hidden-mobile">Features</a>
+      <a id="mentors-pricing" class="nav-item is-tab is-hidden-mobile">Pricing</a>
+      <a id="mentors-kitchen" class="nav-item is-tab is-hidden-mobile">Kitchen</a>
+      <a id="mentors-info" class="nav-item is-tab is-hidden-mobile">Mentors</a>
+      <a id="users" class="nav-item is-tab is-hidden-mobile" style="position: absolute; right: 0px;">{{> loginButtons }}</a>
+      <div class="pull-right">
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+    </div>
+    <div class="nav nav-right nav-menu is-hidden-tablet" style="display: none;">
+      <a id="landing" class="nav-item is-tab is-hidden-tablet mobile-tab">Home</a>
+      <a id="mentors-overview" class="nav-item is-tab is-hidden-tablet mobile-tab">Features</a>
+      <a id="mentors-pricing" class="nav-item is-tab is-hidden-tablet mobile-tab">Pricing</a>
+      <a id="mentors-kitchen" class="nav-item is-tab is-hidden-tablet mobile-tab">Kitchen</a>
+      <a id="mentors-info" class="nav-item is-tab is-hidden-tablet mobile-tab">Mentors</a>
+      <a id="users" class="nav-item is-tab is-hidden-mobile">{{> loginButtons }}</a>
+    </div>
+  </div>
+</nav>
+
+<section id="mentors-welcome" class="hero is-light is-halfheight kitchen-splash is-vcentered has-text-centered">
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+
+        <div class="columns is-vcentered">
+          <div class="container">
+            <div class="column is-12">
+              <img src="/../img/lineaBlack.png" style="max-width: 25vw;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mentors" class="hero is-light is-fullheight" style="background-color: white;">
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical">
+        <article class="is-child has-text-centered">
+          <h2 class="subtitle is-1" style="padding-bottom: 40px;">
+            <br>
+              Connect with our Mentors
+          </h2>
+        </article>
+        <div class="calendar">
+          {{> fullcalendar options}}
+        </div>
+    </div>
+  </div>
+</section>
+
+</template>
