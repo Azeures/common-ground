@@ -38,4 +38,8 @@ Template.landing.events({
   'click #mentors-info'(event) {
     FlowRouter.go('Pages.mentors');
   },
+
+  'click #login'(event) {
+    FlowRouter.go('Pages.users');
+  },
 });
