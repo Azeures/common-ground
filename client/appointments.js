@@ -14,16 +14,16 @@ import './user.html'
 
 
 
-Template.users.onCreated( function() {
+Template.appointments.onCreated( function() {
   //Scrollspy initialisation
   $('body').scrollspy({ target: '.navbar-fixed-top' });
 });
 
-Template.users.helpers({
+Template.appointments.helpers({
 
 });
 
-Template.users.events({
+Template.appointments.events({
   'click #landing'(event) {
     FlowRouter.go('Pages.landing');
   },

@@ -224,6 +224,14 @@ body.modal-open {
   min-height: 25vh;
 }
 
+.is-eightheight {
+  min-height: 12.5vh;
+}
+
+.is-tenheight {
+  min-height: 10vh;
+}
+
 .is-fiveheight {
   min-height: 5vh;
 }

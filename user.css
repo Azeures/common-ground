@@ -1,0 +1,15 @@
+.user-schedule-select {
+  transition: transform .4s ease-in-out;
+}
+
+.user-mentor-select {
+  transition: transform .4s ease-in-out;
+}
+
+.user-kitchen-select {
+  transition: transform .4s ease-in-out;
+}
+
+.user-network-select {
+  transition: transform .4s ease-in-out;
+}

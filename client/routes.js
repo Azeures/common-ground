@@ -49,3 +49,27 @@ FlowRouter.route('/users', {
     $(window).scrollTop(0);
   }
 });
+
+FlowRouter.route('/appointments', {
+  name: 'Pages.user.appointments',
+  action: function() {
+    BlazeLayout.render("appointments", {content: "appointments"});
+    $(window).scrollTop(0);
+  }
+});
+
+FlowRouter.route('/schedule', {
+  name: 'Pages.user.schedule',
+  action: function() {
+    BlazeLayout.render("schedule", {content: "schedule"});
+    $(window).scrollTop(0);
+  }
+});
+
+FlowRouter.route('/plan', {
+  name: 'Pages.user.plan',
+  action: function() {
+    BlazeLayout.render("plan", {content: "plan"});
+    $(window).scrollTop(0);
+  }
+});

@@ -14,16 +14,27 @@ import './user.html'
 
 
 
-Template.users.onCreated( function() {
+Template.schedule.onCreated( function() {
   //Scrollspy initialisation
   $('body').scrollspy({ target: '.navbar-fixed-top' });
 });
 
-Template.users.helpers({
-
+Template.schedule.helpers({
+  options: function() {
+    return {
+      defaultView: 'month',
+      showNonCurrentDates: true,
+      fixedWeekCount: false,
+      dayClick: function(date, allDay, jsEvent, view) {
+        if (allDay) {
+          console.log('A day has been clicked!');
+        }
+      }
+    };
+  }
 });
 
-Template.users.events({
+Template.schedule.events({
   'click #landing'(event) {
     FlowRouter.go('Pages.landing');
   },
