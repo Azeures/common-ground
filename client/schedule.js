@@ -36,9 +36,21 @@ Template.schedule.onRendered( function() {
           dow: [ 2 ]
         },
         {
+          title:"Breakout Session",
+          start: '09:00',
+          end: '01:00',
+          dow: [ 2 ]
+        },
+        {
+          title:"On-site Visits",
+          start: '10:00',
+          end: '12:30',
+          dow: [ 3 ]
+        },
+        {
           title:"Mid-week Presentation",
-          start: '15:00',
-          end: '16:30',
+          start: '16:00',
+          end: '17:30',
           dow: [ 3 ]
         },
         {
@@ -58,6 +70,26 @@ Template.schedule.onRendered( function() {
           start: '17:00',
           end: '19:00',
           dow: [ 5 ]
+        },
+        {
+          title:"May Planning",
+          start: '2017-05-01 09:00',
+        },
+        {
+          title:"Keith Lee",
+          start: '2017-05-31 15:00',
+        },
+        {
+          title:"Tania Rahman",
+          start: '2017-05-31 17:00',
+        },
+        {
+          title:"Pending",
+          start: '2017-06-01 13:00',
+        },
+        {
+          title:"June Planning",
+          start: '2017-06-01 09:00',
         },
     ],
       defaultView: 'month',
