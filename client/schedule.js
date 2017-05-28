@@ -19,6 +19,58 @@ Template.schedule.onCreated( function() {
   $('body').scrollspy({ target: '.navbar-fixed-top' });
 });
 
+Template.schedule.onRendered( function() {
+  // Calendar events
+  $('#calendar').fullCalendar({
+    events: [
+        {
+          title:"Weekly Goal Setting",
+          start: '10:00',
+          end: '14:00',
+          dow: [ 1 ]
+        },
+        {
+          title:"Founder's Lunch",
+          start: '11:30',
+          end: '13:00',
+          dow: [ 2 ]
+        },
+        {
+          title:"Mid-week Presentation",
+          start: '15:00',
+          end: '16:30',
+          dow: [ 3 ]
+        },
+        {
+          title:"Fireside Chat",
+          start: '17:00',
+          end: '19:00',
+          dow: [ 4 ]
+        },
+        {
+          title:"Weekly Review",
+          start: '15:00',
+          end: '14:30',
+          dow: [ 5 ]
+        },
+        {
+          title:"Happy Hour",
+          start: '17:00',
+          end: '19:00',
+          dow: [ 5 ]
+        },
+    ],
+      defaultView: 'month',
+      showNonCurrentDates: true,
+      fixedWeekCount: false,
+      dayClick: function(date, allDay, jsEvent, view) {
+        if (allDay) {
+          console.log('A day has been clicked!');
+        }
+      }
+});
+});
+
 Template.schedule.helpers({
   options: function() {
     return {
@@ -31,7 +83,7 @@ Template.schedule.helpers({
         }
       }
     };
-  }
+  },
 });
 
 Template.schedule.events({

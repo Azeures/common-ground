@@ -15,12 +15,23 @@ import './user.html'
 
 
 Template.appointments.onCreated( function() {
+  const instance = this;
+  instance.appointmentRequested = new ReactiveVar(false);
+  instance.purpose = new ReactiveVar('Not specified');
   //Scrollspy initialisation
   $('body').scrollspy({ target: '.navbar-fixed-top' });
 });
 
 Template.appointments.helpers({
+  isRequested: function() {
+    const instance = Template.instance();
+    return instance.appointmentRequested.get();
+  },
 
+  purpose: function() {
+    const instance = Template.instance();
+    return instance.purpose.get();
+  },
 });
 
 Template.appointments.events({
@@ -57,6 +68,39 @@ Template.appointments.events({
 
   'click #user-network'(event) {
     // FlowRouter.go('Pages.plan');
+  },
+
+  'click #request-appointment'(event) {
+    const instance = Template.instance();
+    let modal = bootbox.dialog({
+      message: $('.request-form-content').html(),
+      title: "Make an appointment",
+      buttons: [
+        {
+          label: "Cancel",
+          className: "btn btn-default pull-right",
+          callback: function() {
+          }
+        },
+        {
+          label: "Request",
+          className: "btn btn-primary pull-right",
+          callback: function() {
+            const input = modal.find(".form-purpose");
+            const purpose = input[0].value;
+            instance.purpose.set(purpose);
+            instance.appointmentRequested.set(true);
+            modal.modal("hide");
+            return false;
+          }
+        }
+      ],
+      show: false,
+      onEscape: function() {
+        modal.modal("hide");
+      }
+    });
+    modal.modal("show");
   },
 
   'mouseenter .user-kitchen-select'(event) {
