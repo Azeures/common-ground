@@ -61,6 +61,10 @@ Template.kitchen.events({
     FlowRouter.go('Pages.mentors');
   },
 
+  'click #login'(event) {
+    FlowRouter.go('Pages.users');
+  },
+
   'submit .kitchen-form'(event, template) {
     event.preventDefault();
     const first = $('#first-name').val();
