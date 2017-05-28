@@ -68,6 +68,14 @@ body.modal-open {
   background-position: center;
 }
 
+.kitchen-plan-splash {
+  background-color: black;
+  background-image: url('/../img/floor-plan.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .pricing-splash {
   background-color: black !important;
   background-repeat: no-repeat;

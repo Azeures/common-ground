@@ -1,51 +1,108 @@
 <template name="plan">
-<nav class="navbar navbar-fixed-top nav-fixed-const" role="navigation">
-  <div class="container">
-    <div class="nav nav-left">
-      <img src="/../img/lineaWhite.png" class="nav-icon">
-      <a id="landing" class="nav-item is-tab is-hidden-mobile">Home</a>
-      <a id="users" class="nav-item s-tab is-hidden-mobile">Dashboard</a>
-      <a id="user-schedule" class="nav-item s-tab is-hidden-mobile">Schedule</a>
-      <a id="user-mentors" class="nav-item is-tab is-hidden-mobile">Mentors</a>
-      <a id="user-kitchen" class="nav-item is-tab is-hidden-mobile">Kitchen</a>
-      <a id="users" class="nav-item is-tab is-hidden-mobile" style="position: absolute; right: 0px;">{{> loginButtons }}</a>
-      <div class="pull-right">
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+  <nav class="navbar navbar-fixed-top nav-fixed-const" role="navigation">
+    <div class="container">
+      <div class="nav nav-left">
+        <img src="/../img/lineaWhite.png" class="nav-icon">
+        <a id="landing" class="nav-item is-tab is-hidden-mobile">Home</a>
+        <a id="users" class="nav-item s-tab is-hidden-mobile">Dashboard</a>
+        <a id="user-schedule" class="nav-item s-tab is-hidden-mobile">Schedule</a>
+        <a id="user-mentors" class="nav-item is-tab is-hidden-mobile">Mentors</a>
+        <a id="user-kitchen" class="nav-item is-tab is-hidden-mobile">Kitchen</a>
+        <a id="users" class="nav-item is-tab is-hidden-mobile" style="position: absolute; right: 0px;">{{> loginButtons }}</a>
+        <div class="pull-right">
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      </div>
+      <div class="nav nav-right nav-menu is-hidden-tablet" style="display: none;">
+        <a id="landing" class="nav-item is-tab is-hidden-tablet mobile-tab">Home</a>
+        <a id="users" class="nav-item is-tab is-hidden-tablet mobile-tab">Dashboard</a>
+        <a id="user-schedule" class="nav-item is-tab is-hidden-tablet mobile-tab">Schedule</a>
+        <a id="user-mentors" class="nav-item is-tab is-hidden-tablet mobile-tab">Mentors</a>
+        <a id="user-kitchen" class="nav-item is-tab is-hidden-tablet mobile-tab">Kitchen</a>
+        <a id="users" class="nav-item is-tab is-hidden-mobile">{{> loginButtons }}</a>
       </div>
     </div>
-    <div class="nav nav-right nav-menu is-hidden-tablet" style="display: none;">
-      <a id="landing" class="nav-item is-tab is-hidden-tablet mobile-tab">Home</a>
-      <a id="users" class="nav-item is-tab is-hidden-tablet mobile-tab">Dashboard</a>
-      <a id="user-schedule" class="nav-item is-tab is-hidden-tablet mobile-tab">Schedule</a>
-      <a id="user-mentors" class="nav-item is-tab is-hidden-tablet mobile-tab">Mentors</a>
-      <a id="user-kitchen" class="nav-item is-tab is-hidden-tablet mobile-tab">Kitchen</a>
-      <a id="users" class="nav-item is-tab is-hidden-mobile">{{> loginButtons }}</a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<section id="users-welcome" class="hero is-light is-halfheight kitchen-splash is-vcentered has-text-centered">
+  <section id="users-welcome" class="hero is-light is-halfheight kitchen-splash is-vcentered has-text-centered">
 
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-vcentered">
-
-
+    <div class="hero-body">
+      <div class="container">
         <div class="columns is-vcentered">
-          <div class="container">
-            <div class="column is-12">
-              <img src="/../img/lineaBlack.png" style="max-width: 25vw;">
+
+
+          <div class="columns is-vcentered">
+            <div class="container">
+              <div class="column is-12">
+                <img src="/../img/lineaBlack.png" style="max-width: 25vw;">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="hero is-light is-tenheight" style="padding-top: 40px;">
+    <div class="tile is-ancestor has-text-centered">
+      <div class="tile is-parent is-4 is-tenheight" style="background-color: white;">
+        <div class="columns has-text-centered" style="width: 100%">
+          <div class="column is-12 info-content has-text-centered">
+            <h2 class="subtitle is-4">
+              Your current plan<br>
+            </h2>
+            <div></div>
+            <h1 class="title is-2">
+              PRO
+            </h1>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent is-4 is-tenheight" style="background-color: white;">
+        <div class="columns" style="width: 100%">
+          <div class="column is-12 info-content has-text-centered">
+            <h2 class="subtitle is-4">
+              Kitchen time remaining<br>
+            </h2>
+            <div></div>
+            <h1 class="title is-2">
+              <span style="color: #77dd77;">50</span> hours
+            </h1>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent is-4 is-tenheight" style="background-color: white;">
+        <div class="columns" style="width: 100%">
+          <div class="column is-12 info-content has-text-centered">
+            <h2 class="subtitle is-4">
+              Utilities<br>
+            </h2>
+            <div></div>
+            <h1 class="title is-4" style="line-height: 1.5;">
+              <span style="color: #77dd77;">3/3</span> Dry storage shelf claimed<br>
+              <span style="color: #FFAA80;">2/3</span> Cold storage shelf claimed<br>
+              <span style="color: #77dd77;">3/3</span> Dry storage shelf claimed<br>
+            </h1>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-fullheight">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-2 is-halfheight"></div>
+      <div class="tile is-parent is-8 is-halfheight kitchen-plan-splash"></div>
+      <div class="tile is-parent is-2 is-halfheight"></div>
+    </div>
+  </section>
 
 
 </template>
